@@ -1,0 +1,107 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body, html, a:after {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+a:hover:hover span:before, a:hover:hover span:after {
+  opacity: 1;
+  -webkit-transition: ease 1s all;
+  transition: ease 1s all;
+  -webkit-transition-delay: opacity 2s;
+          transition-delay: opacity 2s;
+}
+
+body, html {
+  width: 100%;
+  height: 100vh;
+  background-image: url(../bg-image.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  font-family: 'Montserrat', sans-serif, serif;
+}
+
+a {
+  position: relative;
+  background: #ff4655;
+  padding: 10px 20px;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-size: .8rem;
+  letter-spacing: 3px;
+  color: #fff;
+}
+
+a:after {
+  position: absolute;
+  content: 'BUTTON';
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: -100%;
+  visibility: hidden;
+}
+
+a:hover:after {
+  -webkit-transition: ease .75s;
+  transition: ease .75s;
+  background: #0f1923;
+  visibility: visible;
+  left: 0%;
+  width: 101%;
+  overflow: hidden;
+}
+
+a:hover:hover span:before {
+  top: -5px;
+}
+
+a:hover:hover span:after {
+  bottom: -5px;
+}
+
+a span {
+  overflow: hidden;
+}
+
+a span:before {
+  position: absolute;
+  content: '';
+  top: -15px;
+  left: -5%;
+  right: 0;
+  width: 110%;
+  height: 57%;
+  margin: auto;
+  opacity: 0;
+  border-top: 0.01575rem solid #fff;
+  border-left: 0.01575rem solid #fff;
+  border-right: 0.01575rem solid #fff;
+}
+
+a span:after {
+  position: absolute;
+  content: '';
+  bottom: -15px;
+  left: -5%;
+  right: 0;
+  width: 110%;
+  height: 57%;
+  margin: auto;
+  opacity: 0;
+  border-left: 0.01575rem solid #fff;
+  border-right: 0.01575rem solid #fff;
+  border-bottom: 0.01575rem solid #fff;
+}
+/*# sourceMappingURL=main.css.map */
